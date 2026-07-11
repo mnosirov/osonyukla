@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 60,
+      "includeFiles": "node_modules/{youtube-dl-exec,ffmpeg-static}/**"
+    }
+  }
+}
