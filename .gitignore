@@ -1,4 +1,6 @@
 node_modules/
+bin/
+.claude/
 cookies.txt
 server.log
 *.log

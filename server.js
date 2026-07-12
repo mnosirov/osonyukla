@@ -20,10 +20,7 @@ app.post('/api/info', async (req, res) => {
     res.json(await getVideoInfo(url));
   } catch (err) {
     console.error(err);
-    res.status(500).json({
-      error: friendlyErrorMessage(err),
-      debug: { message: err.message, code: err.code, stderr: err.stderr },
-    });
+    res.status(500).json({ error: friendlyErrorMessage(err) });
   }
 });
 
